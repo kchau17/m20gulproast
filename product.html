@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Columbian-Blended Espresso Beans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@300;400;700&amp;family=Poppins:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary border-bottom border-5">
+            <div class="container-fluid">
+            <a class="logo navbar-brand" href="https://uxuicurriculum.wixsite.com/gulproast"><img src="https://assets.codepen.io/6306176/gulp-logo-dark.png" alt="Gulp Roast Logo" width="125px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="https://uxuicurriculum.wixsite.com/gulproast">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Coffee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <img src="https://assets.codepen.io/6306176/gulp-espresso.jpg" class="columbian-img img-fluid" alt="Columbian-Blended Espresso Beans">
+        <h1 class="columbian text-center bs-primary-text-emphasis bg-light-subtle"> Columbian-Blended Espresso Beans </h1>
+        <div class="flavor-profile">
+        <h4 class="text-center text-black bs-primary-text-emphasis"> Flavor Profiles</h4>
+        <div class="flavor-profiles container">
+            <div class="flavors row g-2 justify-content-center">
+                <div class="flavor-card col-4 card" style="width: 150px">
+                    <img class="bourbon text-center" src="icons/bottle.png" alt="Bottle of bourbon icon" width="40"/>
+                    <div class="card-body">
+                        <h5 class="bourbon-flavor flavors card-title text-center">Bourbon</h5>
+                    </div>
+                  </div>
+                <div class="flavor-card col-4 card" style="width: 150px">
+                    <img class="cherry text-center" src="icons/cherry.png" alt="Cherry icon" width="40"/>
+                    <div class="card-body">
+                        <h5 class="cherry-flavor flavors card-title text-center">Cherry</h5>
+                    </div>
+                  </div>
+                <div class="flavor-card col-4 card" style="width: 150px">
+                    <img class="chocolate text-center" src="icons/inclined-chocolate-bar.png" alt="Chocolate icon" width="40"/>
+                    <div class="card-body">
+                        <h5 class="chocolate-flavor flavors card-title text-center">Milk Chocolate</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="brew-method">
+            <h4 class="text-center bs-primary-text-emphasis">Recommended Brew Method</h4>
+            <div class="container">
+                <div class="flavors row g-2 justify-content-center">
+                    <div class="flavor-card col-4 card" style="width: 150px">
+                        <img class="aeropress text-center" alt="Aeropress icon" src="icons/aeropress.png" width="40"/>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Aeropress</h5>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="size">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h4 class="bs-primary-text-emphasis col-2 text-center" style="width:100px">Size?</h4>
+                    <div class="dropdown text-center col-4" style="width:170px">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select a size</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" onclick="updateButtonText(this)">Select a size</a>
+                            <a class="dropdown-item" onclick="updateButtonText(this)">12 oz. : $18</a>
+                            <a class="dropdown-item" onclick="updateButtonText(this)">5 lb. : $85</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center pt-5">
+            <a class="btn btn-primary d-inline-block" style="width: 200px">Add to cart</a>
+        </div>
+    </article>
+    <footer class="border-secondary border-top border-5 text-center py-5 mt-5 bg-body-tertiary text-black">
+    <div class="container-sm">
+      <p>&copy;2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
+      <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
+    </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    function updateButtonText(element) {
+    var selectedText = element.textContent.trim();
+
+    document.getElementById('dropdownMenuButton1').innerText = selectedText;
+}
+</script>
